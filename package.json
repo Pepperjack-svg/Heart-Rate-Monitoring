@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "concurrently \"npm run next\" \"npm run bridge\"",
     "next": "next dev",
-    "bridge": "node serial-bridge.js",
+    "bridge": "ts-node utils/serial-bridge.ts",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
@@ -27,6 +27,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.0.1",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }
